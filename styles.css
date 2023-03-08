@@ -1,0 +1,252 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+:root{
+    --maincolor: #dbd7d2;
+    --ecrucolor: #CDB280;
+    --dutchwhitecolor: #efdfbb;
+    --mellowyellowcolor: #ffc40c ;
+    --apricotcolor: #fbceb1;
+    
+    
+}
+/* navbar */
+.navbar{
+    max-width: 2000px;
+    width: 100%;
+    background-color: var(--maincolor);
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+   
+}
+.logoImageContainer img{
+    width: 100px;
+    object-fit: contain;    
+}
+/* img{
+    max-width: 100%;
+    max-height: 100%;
+} */
+.navbar nav{
+width: 35%;
+
+}
+.navbar  ul{
+    display: flex;
+    list-style-type:none;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+
+}
+.navbar a{
+    text-decoration: none;
+    font-size: 1rem;
+    color: var(--ecrucolor);
+
+}
+
+
+.icons{
+    color: black;
+    display: flex;
+    margin-left: 2rem;
+    font-size: 1rem;
+
+}
+ .icons fa-thinfa-bars{
+    display: none;
+ }
+
+
+/* homepage container */
+.page-container{
+    display: flex;
+    justify-content: space-between;
+    max-width: fit-content;
+    background-color: var(--maincolor);
+    margin: 0 auto 1em;
+    align-items: center;
+    width: 100%;
+}
+.content-section{
+width: 50%;
+/* background-color: var(--ecrucolor); */
+padding: 0.3em;
+}
+
+.content-section h1{
+    font-size: 3rem;
+color: var(--ecrucolor);
+
+}
+.second-heading{
+    font-size: 3rem;
+    display: inline-block; 
+    width: 100%;
+    text-align: right;
+}
+.content-section p{
+    font: .8rem;
+    color: var(--ecrucolor);
+    margin: .5rem 0;
+
+}
+.btn1{
+    width: 35%;
+    padding: .5rem 1.4rem;
+    font-size: 1.3rem;
+    margin-top: 2rem;
+    /* border: none; */
+   background-color: var(--ecrucolor); 
+    /* outline: none;  */
+    color: var(--dutchwhitecolor);
+
+}
+.home-page-img img{ 
+    width: 500px;
+    height: 1000px;
+    object-fit: contain;  
+}
+/* end of page container 1 */
+
+/* start of homepage container section 2 */
+.container-two{
+    margin-top: 1rem;
+    justify-content:space-between;
+    background-color: var(--maincolor);
+    text-align:center;
+    position: relative;
+}
+.medical-disclaimer img{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    background-color: var(--maincolor);
+}
+/* .disclaimer-img img{
+    width: 400px
+} */
+.medical-disclaimer{
+    top:50%; 
+    left: 50%; 
+    color: var(--ecrucolor);
+}
+.btn2{
+    width: 20%;
+}
+/* start of homepage section three */
+.book-appt-container{
+    display: flex;
+    justify-content: space-between;
+    max-width: fit-content;
+    margin: 0 auto 1em;
+    align-items: center;
+    width: 100%;
+    background-color: var(--maincolor);
+}
+.book-section-content{
+    width: 50%;
+    padding: 0.3em;
+}
+.book-section-content h1{
+    font-size: 3rem;
+    color: var(--ecrucolor);
+}
+.book-section-img img{
+    width: 500px;
+    height: 1000px;
+    object-fit: contain;
+}
+.book-section-content p{
+    font: .8rem;
+    color: var(--ecrucolor);
+    margin: .5rem 0;
+}
+
+.btn3{
+
+    width: 45px;
+    }
+
+/* footer */
+.footbar{
+    background-color: var(--maincolor);
+    color: var(--ecrucolor); 
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 2rem;
+    flex-wrap: wrap;
+}
+.footer-text{
+    width: 20%;
+}
+ h2{
+    color: var(--ecrucolor);
+}
+h3{
+    color: var(--ecrucolor);
+}
+ .footer-text-two img{
+    width: 100px;
+ }
+ .footer-img img{
+    width: 100px;
+ }
+
+
+
+
+/* navbar media queries */
+@media screen and (max-widith:900px){
+    html{
+        font: size 16px;
+    }
+    
+}
+@media screen  and (max-widith:755px ){
+    html{
+        font-size: 10px;
+    
+    }
+    .navbar{
+        max-width: 650px;
+    }
+    .navbar ul{
+        position: absolute;
+        width: 100%;
+        display: block;
+        text-align: center;
+        padding: 1rem;
+        margin-bottom: 1rem;
+    }
+    
+.navbar a{
+    font-size: 1rem;
+
+}
+
+    
+}
+@media screen  and (max-widith:540px){
+    html{
+        font-size: 9px;
+    
+    }
+    .logoImageContainer img{
+        width: 60px;
+            
+    }
+    .navbar{
+        max-width: 650px;
+    }
+}
+/* media quries end for navbar */
+/* media queries for page content */
