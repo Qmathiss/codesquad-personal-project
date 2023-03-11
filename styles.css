@@ -98,8 +98,8 @@ color: var(--ecrucolor);
     margin: .5rem 0;
 
 }
-.btn1{
-    width: 35%;
+.btn{
+    width: 45%;
     padding: .5rem 1.4rem;
     font-size: 1.3rem;
     margin-top: 2rem;
@@ -117,30 +117,41 @@ color: var(--ecrucolor);
 /* end of page container 1 */
 
 /* start of homepage container section 2 */
-.container-two{
+.medical-disclaimer{
     margin-top: 1rem;
     justify-content:space-between;
     background-color: var(--maincolor);
     text-align:center;
-    position: relative;
+    position: relative; 
 }
 .medical-disclaimer img{
-    width: 100%;
+    width: 50%;
     display: flex;
     align-items: center;
     background-color: var(--maincolor);
+    
+}
+.medical-disclaimer-content{
+    line-height: 26px;
+    padding-bottom: 14px;
 }
 /* .disclaimer-img img{
     width: 400px
 } */
-.medical-disclaimer{
+/* .medical-disclaimer{
     top:50%; 
     left: 50%; 
     color: var(--ecrucolor);
-}
-.btn2{
+} */
+/* .medical-disclaimer h1{
+    padding: 1rem;
+    width: 100%;
+    margin: auto;
+    display: flex; */
+/* } */
+/* .btn2{
     width: 20%;
-}
+} */
 /* start of homepage section three */
 .book-appt-container{
     display: flex;
@@ -170,10 +181,69 @@ color: var(--ecrucolor);
     margin: .5rem 0;
 }
 
-.btn3{
+/* .btn3{
 
     width: 45px;
-    }
+    } */
+
+/* end of homepage */
+/* start of herbal index page */
+.herb-page-container{
+    background-color: var(--maincolor); 
+    text-align: center; 
+    /* margin: 0.5em 0; */
+
+}
+.herb-products{
+    justify-content: space-around;
+    /* margin: 2em 0; */
+    /* padding:0 1em; */
+}
+
+.herb-products img{
+    width: 90%;
+    margin: auto;
+    height: 300px;
+    display: block;
+    object-fit: contain;
+
+}
+
+/* end of herbal index page */
+/* start of about page */
+.about-page-container{
+    box-sizing: content-box;
+    border: 6px solid var(--apricotcolor);
+    height: 150px;
+    font-size: larger;
+    padding: 25px; 
+    align-content: center;
+}
+.resources-links{
+    box-sizing: border-box;
+    border: 6px solid var(--apricotcolor);
+    align-content: center;
+    height: 620px;
+    
+}
+
+.resources-links img{
+    width: 500px;
+    display: flex;
+
+ 
+    
+}
+.resources-links{
+    list-style: none;
+}
+/* end of about page  */
+/* start of book page */
+.book-page-container img{
+    width: 500px;
+    display: flex;
+}
+
 
 /* footer */
 .footbar{
