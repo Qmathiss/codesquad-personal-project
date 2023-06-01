@@ -2,13 +2,15 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: Montserrat sans-serif;
 }
 :root{
-    --maincolor: #dbd7d2;
-    --ecrucolor: #CDB280;
+    --maincolor: #F1EBEB;
+    --ecrucolor: black;
     --dutchwhitecolor: #efdfbb;
     --mellowyellowcolor: #ffc40c ;
     --apricotcolor: #fbceb1;
+    --whitecolor: white;
     
     
 }
@@ -71,8 +73,9 @@ width: 35%;
     justify-content: space-between;
     max-width: fit-content;
     background-color: var(--maincolor);
+    font-family: sans-serif;
     margin: 0 auto 1em;
-    align-items: center;
+    /* align-items: center; */
     width: 100%;
 }
 .content-section{
@@ -106,7 +109,7 @@ color: var(--ecrucolor);
     /* border: none; */
    background-color: var(--ecrucolor); 
     /* outline: none;  */
-    color: var(--dutchwhitecolor);
+    color: var(--whitecolor);
 
 }
 .home-page-img img{ 
@@ -134,6 +137,9 @@ color: var(--ecrucolor);
 .medical-disclaimer-content{
     line-height: 26px;
     padding-bottom: 14px;
+}
+.btn-2{
+    margin: 0 28%;
 }
 /* .disclaimer-img img{
     width: 400px
