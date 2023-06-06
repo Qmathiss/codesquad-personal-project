@@ -186,6 +186,17 @@ color: var(--ecrucolor);
     color: var(--ecrucolor);
     margin: .5rem 0;
 }
+quiz-form {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+}
+.quiz-question {
+    margin-bottom: 10px;
+}
+.quiz-options label {
+    display: block;
+}
 
 /* .btn3{
 
