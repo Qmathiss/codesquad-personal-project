@@ -1,36 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    <script src="https://kit.fontawesome.com/3bb7188dce.js" crossorigin="anonymous"></script>
-    <title>Sunsha Holistic Collective About Page </title>
-    <script  defer src="scripts.js"></script>
-</head>
-<body>
-    <div class="navbar">
-        <div class = logoImageContainer>
-            <img src="./images /logo 1.jpg">
-        </div>
-<nav>
-    <ul>
-        <li><a href="./index.html">Home</a></li>
-        <li><a href="./about.html">About</a></li>
-        <li><a href="./herbals.html">Herbal Catalog</a></li>
-        <li><a href="./book.html">Book Now</a></li>
-        
-    </ul>
-</nav>
+<%- include('../partials/head')-%>
+<%- include('../partials/nav')-%>
 
-<div class="icons">
-    <i class="fa-solid fa-magnifying-glass"></i>
-    <i class="fa-thin fa-bars"></i>
-    <i class="fa-regular fa-user"></i>     
-</div>
-</div>
-<!-- end of nav bar -->
 
 <!-- start of page contatiner -->
 <div class="about-page-container">
@@ -56,31 +26,4 @@
     </ul>
 </div>
 <!-- end of page container -->
-<!-- start of footbar -->
- <div class="footbar"> 
-    <div class="footer-img">
-    <img src="./images /logo 1.jpg">
-    </div>
-    <div class="footer-text"> 
-        <h2>Keep in Touch</h2>
-        <h3> Text line: 857-309-0523</h3>
-        <h3>info@sunshaholisticcollective.org</h3>
-        </div>
-       <div class="footer-text-two">
-    <!-- <h2>A Product of Codesquad</h2> -->
-    <!-- <img src="./images /CodeSquad-logo-a copy.jpeg" alt="code squad logo in words red and black"> -->
-    <!-- <h3>Developer: Shaquana Mathis</h3> -->
-</div>
-    <div class="footer-text-three">
-        <h2>Connect with Us</h2>
-        <a><i class="fa-brands fa-facebook"></i></a>
-           <a><i class="fa-brands fa-instagram"></i></a>
-    <a><i class="fa-brands fa-twitter"></i></a>
-
-</div>
-
-</div>
-<!-- end of footbar --> 
-    
-</body>
-</html>
+<%- include('../partials/footer')-%>

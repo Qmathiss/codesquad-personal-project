@@ -1,40 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    <script src="https://kit.fontawesome.com/3bb7188dce.js" crossorigin="anonymous"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com"> 
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,600;1,400&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">  
-    <title>Sunsha Holistic Collective Herbs Catalog</title>
-    <script  defer src="scripts.js"></script>
-</head>
-<body>
-     <!-- nav bar -->
-     <div class="navbar">
-        <div class = logoImageContainer>
-            <img src="./images /logo 1.jpg">
-        </div>
-<nav>
-    <ul>
-        <li><a href="./index.html">Home</a></li>
-        <li><a href="./about.html">About</a></li>
-        <li><a href="./herbals.html">Herbal Catalog</a></li>
-        <li><a href="./book.html">Book Now</a></li>
-        <li><a href="./contact.html">Contact</a></li>
-    </ul>
-</nav>
+<%- include('../partials/head')-%>
+<%- include('../partials/nav')-%>
 
-<div class="icons">
-    <i class="fa-solid fa-magnifying-glass"></i>
-    <i class="fa-thin fa-bars"></i>
-    <i class="fa-regular fa-user"></i>     
-</div>
-</div>
-<!-- end of nav bar -->
 <ul id="alphabetLinks"></ul>
 
 
@@ -76,27 +42,5 @@
     <a href="https://herbs-america.com/shop/pata-de-vaca-cut-sift/">Purchase here</a>
 </div>
 </div>
-<!-- footbar starts here -->
-<div class="footbar">
-    <div class="footer-img">
-    <img src="./images /logo 1.jpg">
-    </div>
-    <div class="footer-text"> 
-        <h2>Keep in Touch</h2>
-        <h3> Text line: 857-309-0523</h3>
-        <h3>info@sunshaholisticcollective.org</h3>
-        </div>
-    <div class="footer-text-three">
-        <h2>Connect with Us</h2>
-        <a><i class="fa-brands fa-facebook"></i></a>
-           <a><i class="fa-brands fa-instagram"></i></a>
-    <a><i class="fa-brands fa-twitter"></i></a>
-    </div>
-    <div class="footer-text-two">
-        <h2>A Product of Codesquad</h2>
-        <img src="./images /CodeSquad-logo-a copy.jpeg" alt="code squad logo in words red and black">
-        <h3>Developer: Shaquana Mathis</h3>
-    </div>
-</body>
 
-</html>
+<%- include('../partials/footer')-%>
