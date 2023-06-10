@@ -1,20 +1,28 @@
 {
   "name": "codesquad-personal-project-",
   "version": "1.0.0",
-  "description": "backend-project",
+  "description": "back end portion of project",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-    	"dev": "nodemon app.js"
+    "test": "echo \"Error: no test specified\" && exit 1",
+  "dev": "nodemon app.js"
   },
-  "author": "",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Qmathiss/codesquad-personal-project.git"
+  },
+  "author": "shaquana mathis",
   "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Qmathiss/codesquad-personal-project/issues"
+  },
+  "homepage": "https://github.com/Qmathiss/codesquad-personal-project#readme",
   "dependencies": {
-    "dotenv": "^16.1.3",
+    "dotenv": "^16.1.4",
     "ejs": "^3.1.9",
     "express": "^4.18.2",
     "method-override": "^3.0.0",
-    "mongoose": "^7.2.2",
+    "mongoose": "^7.2.3",
     "morgan": "^1.10.0"
   },
   "devDependencies": {
