@@ -1,7 +1,33 @@
 <%- include('../partials/head')-%>
 <%- include('../partials/nav')-%>
 
-
+<div>
+    <form method="post" action="/books">
+        <div class="create-page-container">
+            <h1>Create New Herb</h1>
+<div class="create-page-plant-name">
+    <label>Plant Name</label>
+    <input type="text" name="plantName" id="plantName" placeholder="plantName"></div>
+    <br>
+                <div class="create-page-benefits">
+                <label>Benefits</label>
+                <input type="text" name="benefits" id="benefits" placeholder="benefits">
+            </div>
+                <br>
+                <div class="create-page-purchase">
+                    <label>Purchase:</label>
+                    <input type="text" name="purchase" id="genre" placeholder="purchase">
+                    </div>
+                    <br>
+            
+                    <div class="create-page-submit">
+                        <p><input type="submit" value="Submit"></p>
+                        </div>
+                        
+                    
+                    
+            </form>
+        </div>
 
 
 
