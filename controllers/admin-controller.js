@@ -6,10 +6,10 @@ module.exports = {
     admin_console:(request, response) => {
         response.render('pages/admin')
     },
-    create_book: (request, response)=>{
+    create_herbal: (request, response)=>{
         response.render ('pages/create')
     },
-    update_book:(request,response)=>{
+    update_herbal:(request,response)=>{
         const id=request.params.id
         const foundHerbal= data.find(herbal=>herbal._id=== String(id))
        console.log(foundHerbal)

@@ -1,0 +1,14 @@
+<div>
+    <% for(herb of data) { %>
+        <div class="herb-products">
+            <!-- <a href="<%= herb.link %>"> -->
+                <img src="<%= herb.image %>" alt="<%= herb.alt %>">
+            <!-- </a> -->
+            <h3><%= herb.plantName %></h3>
+            <h4>Benefits:</h4>
+            <p><%= herb.benefits %></p>
+            <!-- <a href="<%= herbal.purchaseLink %>">Purchase Here</a> -->
+        </div>
+    <% } %>
+</div>
+

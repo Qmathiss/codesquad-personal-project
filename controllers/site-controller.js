@@ -10,4 +10,7 @@ module.exports = {
   book: (request, response) => {
     response.render("pages/book");
   },
+  herbals:(request,response)=>{
+    response.render("pages/herbals");
+  }
 };

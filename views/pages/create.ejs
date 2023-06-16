@@ -2,26 +2,26 @@
 <%- include('../partials/nav')-%>
 
 <div>
-    <form method="post" action="/books">
+    <form method="post" action="/herbals">
         <div class="create-page-container">
             <h1>Create New Herb</h1>
 <div class="create-page-plant-name">
     <label>Plant Name</label>
-    <input type="text" name="plantName" id="plantName" placeholder="plantName"></div>
+    <input type="text" name="plantName" id="plantName" placeholder="plantName" required/></div>
     <br>
                 <div class="create-page-benefits">
                 <label>Benefits</label>
-                <input type="text" name="benefits" id="benefits" placeholder="benefits">
+                <input type="text" name="benefits" id="benefits" placeholder="benefits" required/>
             </div>
                 <br>
                 <div class="create-page-purchase">
                     <label>Purchase:</label>
-                    <input type="text" name="purchase" id="genre" placeholder="purchase">
+                    <input type="text" name="purchase" id="purchase" placeholder="purchase"required/>
                     </div>
                     <br>
             
                     <div class="create-page-submit">
-                        <p><input type="submit" value="Submit"></p>
+                        <input type="submit" value="Submit">
                         </div>
                         
                     
