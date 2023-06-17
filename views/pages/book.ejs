@@ -1,42 +1,47 @@
 <%- include('../partials/head')-%>
-<%- include('../partials/nav')-%>
-<!-- start of page container -->
-<div class="book-page-container">
-<div class="quiz-form">
-<h1>Healing Journey Questionaire:</h1>
-<p>In order to best assist on your wellness path, please answer the following questions, and the best options that suit your needs will populate</p>
-<form id="quiz-form">
-    <div class="quiz-question">
-        <p> 1. What do you want to explore on your healing path?</p>
-        <div class="quiz-selections">
-     <label><input type="radio" name="q1" id="a"> A. Find Your Purpose </label>
-     <label><input type="radio" name="q1" id="b"> B.Create healthy eating habits </label>
-     <label><input type="radio" name="q1" id="c"> C. Indulge in regular self care.</label>
+    <%- include('../partials/nav')-%>
+        <!-- start of page container -->
+        <div class="book-page-container">
+            <div class="quiz-form">
+                <h1>Healing Journey Questionaire:</h1>
+                <p>In order to best assist on your wellness path, please answer the following questions, and the best
+                    options that suit your needs will populate</p>
+                <form id="quiz-form">
+                    <div class="quiz-question">
+                        <p> 1. What do you want to explore on your healing path?</p>
+                        <div class="quiz-selections">
+                            <label><input type="radio" name="q1" id="a"> A. Find Your Purpose </label>
+                            <label><input type="radio" name="q1" id="b"> B.Create healthy eating habits </label>
+                            <label><input type="radio" name="q1" id="c"> C. Indulge in regular self care.</label>
+                        </div>
+                    </div>
+                    <div class="quiz-question">
+                        <p>2.What is one important resource you want at the start of your healing journey?</p>
+                        <div class="quiz-selections">
+                            <label><input type="radio" name="q2" id="a"> A. Holistic therapy (healing innerchild truama,
+                                reiki, meditation) </label>
+                            <label><input type="radio" name="q2" id="b"> B.Meeting with herbalist,holisitc
+                                practioners,or nutritionist </label>
+                            <label><input type="radio" name="q2" id="c"> C.Create or find a group, tribe or community of
+                                your peers on the same healing journey.</label>
+                        </div>
+
+                    </div>
+                    <button type="submit">Submit</button>
+
+                </form>
+
+            </div>
+
+            <div id="location-container">
+                <input id="location">
+                <img src="./images/location map.jpg" width="100%" id="map">
+            </div>
+
         </div>
-    </div>
-    <div class="quiz-question">
-        <p>2.What is one important resource you want at the start of your healing journey?</p>
-        <div class="quiz-selections">
-            <label><input type="radio" name="q2" id="a"> A. Holistic therapy (healing innerchild truama, reiki, meditation) </label>
-            <label><input type="radio" name="q2" id="b"> B.Meeting with herbalist,holisitc practioners,or nutritionist </label>
-            <label><input type="radio" name="q2" id="c"> C.Create or find a group, tribe or community of your peers on the same healing journey.</label>
-        </div>
-
-    </div>
-    <button type="submit">Submit</button>
-
-</form>
-
-</div>
-
-<div id="location-container"></div>
-    <input id="location">
-<img src="./images /location map.jpg">
-
-</div>
 
 
 
 
-<!-- end of page container -->
-<%- include('../partials/footer')-%>
+        <!-- end of page container -->
+        <%- include('../partials/footer')-%>

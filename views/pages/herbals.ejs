@@ -1,46 +1,27 @@
 <%- include('../partials/head')-%>
-<%- include('../partials/nav')-%>
+    <%- include('../partials/nav')-%>
 
-<ul id="alphabetLinks"></ul>
+        <ul id="alphabetLinks"></ul>
 
 
-<div class="herb-page-container">
-    <h1>Herbal Catalog</h1>
-    <button>Add new herb product</button>
-    
-    <div class="herb-products">
-        <a href="https://animamundiherbals.com/products/whole-dried-blue-lotus-flowers">
-        <img src="./images /herbalimage1.jpeg"alt="blue flower"></a>
-        <h3>Plant Name: Egyptian Blue Lotus Flower</h3>
-        <h4>Benefits:</h4>
-        <p>Egyptian Blue Lotus Flower was held in high merit by the ancient Egyptians.The flower is used to treat aches and pains within the body, improve brain memory, and promote body circulation. It is best absorbed through in the form of tea</p>
-       <a href="https://animamundiherbals.com/products/whole-dried-blue-lotus-flowers">Purchase Here </a>
-    </div>
-       
-    
-    <div class="herb-products">
-        <a href="https://alkalineherbshop.com/products/just-herbs-ginger-root-cs?variant=39287594483799&currency=USD&utm_medium=product_sync&utm_source=google&utm_content=sag_organic&utm_campaign=sag_organic&gclid=CjwKCAjwpuajBhBpEiwA_ZtfhawBN8abDW_rZeM31lAORv5uZZgtojVrZ486Sf2n_y7xA4UX4gJEQhoCQE0QAvD_BwE">
-        <img src="./images /herbalcatalogimage2.jpeg" alt="plant with brown roots"><a 
-        <h3> Plant name: Ginger Root</h3>
-        <h4>Benefits:</h4>
-        <p> Ginger root has been used as nature's alternative to the reduction of bloodclots within the body. Drinking ginger tea, heats up the blood to activate an enzyme in the body Plasmin which dissolves the formation of a blood clot. It is best absorbed through in the form of tea.</p>
-        <a href="https://alkalineherbshop.com/products/just-herbs-ginger-root-cs?variant=39287594483799&currency=USD&utm_medium=product_sync&utm_source=google&utm_content=sag_organic&utm_campaign=sag_organic&gclid=CjwKCAjwpuajBhBpEiwA_ZtfhawBN8abDW_rZeM31lAORv5uZZgtojVrZ486Sf2n_y7xA4UX4gJEQhoCQE0QAvD_BwE">Purchase availiable at local grocery stores.</a>
-</div>
-<div class="herb-products">
-    <img src="./images /horsetailimg.jpeg">
-    <h2>Plant name: Horsetail </h2>
-    <h3>Benefits:</h3>
-    <p> Horsetail plant has roots orignated in Europe, Asia, and North America as far back to 416 million years ago. Native americans used the stalk of the plant as a diuretic to repair the kidneys. The plant is also used to stregthen bones and and repair the lungs. It is best abosorbed through form of team and vegertian diet.  </p>
-    <a href="https://mountainroseherbs.com/horsetail">Purchase here</a>
-</div>
+        <div class="herb-page-container">
+            <h1>Herbal Catalog</h1>
+            <br><br>
+            <div class=" herb-products">
+                <% if(data.length){ for(let i=0; i< data.length; i++) {%>
+                    <img src="./images/<%= data[i].image%>">
+                    <h2>
+                        <%= data[i].plantName%>
+                    </h2>
+                    <h3>Benefits:</h3>
+                    <p>
+                        <%= data[i].benefits%>
+                    </p>
+                    <a href="<%= data[i].url%>" target="_blank">Purchase here</a>
+                    <% } }else{ %>
+                        <div>No plants</div>
+                        <% } %>
+            </div>
 
-<div class=" herb-products">
-    <img src="./images /bauhiniaforficataplant.jpeg">
-    <h2>Bauhinia Forficata</h2>
-    <h3>Benefits:</h3>
-    <p> Bauhinia Forficata is known as the Brazilian orchid tree native to south america. This plant can help strengthen the pancreas. It is known as a vegetable insulin and helps balance the blood sugar levels.</p>
-    <a href="https://herbs-america.com/shop/pata-de-vaca-cut-sift/">Purchase here</a>
-</div>
-</div>
 
-<%- include('../partials/footer')-%>
+            <%- include('../partials/footer')-%>

@@ -30,13 +30,13 @@
     width: 100px;
     object-fit: contain;    
 }
-/* img{
-    max-width: 100%;
-    max-height: 100%;
-} */
+
 .navbar nav{
 width: 35%;
 
+}
+.icon{
+    display: none;
 }
 .navbar  ul{
     display: flex;
@@ -69,46 +69,63 @@ width: 35%;
 
 /* homepage container */
 .page-container{
-    display: flex;
-    justify-content: space-between;
+   
     max-width: fit-content;
     background-color: var(--maincolor);
     font-family: sans-serif;
-    margin: 0 auto 1em;
-    /* align-items: center; */
     width: 100%;
 }
 .content-section{
-width: 50%;
-/* background-color: var(--ecrucolor); */
+width: 100%;
+
+text-align: center;
 padding: 0.3em;
 }
 
 .content-section h1{
-    font-size: 3rem;
+    width: 60%;
+    margin: 0 auto;
+    font-size: 2.5rem;
 color: var(--ecrucolor);
 
 }
+
 .second-heading{
-    font-size: 3rem;
-    display: inline-block; 
-    width: 100%;
-    text-align: right;
-}
-.content-section p{
-    font: .8rem;
-    color: var(--ecrucolor);
-    margin: .5rem 0;
+    font-size: 2.5rem; 
+    width: 60%;
+    margin: 0 auto;
 
 }
+.content-section p{
+    font: .5rem;
+    color: var(--ecrucolor);
+    margin: .5rem 0;
+    width: 60%;
+        margin: 0 auto;
+}
+.content-section img{
+    width: 60%
+}
 .btn{
-    width: 45%;
+    width: 25%;
+    padding: .5rem 1.4rem;
+    font-size: 1.3rem;
+    margin: 0 auto;
+    margin-top: 2rem;
+    
+   background-color: var(--ecrucolor); 
+ 
+    color: var(--whitecolor);
+
+}
+.consent-btn {
+    width: 40%;
     padding: .5rem 1.4rem;
     font-size: 1.3rem;
     margin-top: 2rem;
-    /* border: none; */
-   background-color: var(--ecrucolor); 
-    /* outline: none;  */
+   
+    background-color: var(--ecrucolor);
+   
     color: var(--whitecolor);
 
 }
@@ -121,13 +138,17 @@ color: var(--ecrucolor);
 
 /* start of homepage container section 2 */
 .medical-disclaimer{
-    margin-top: 1rem;
-    justify-content:space-between;
+    margin-top: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+ 
     background-color: var(--maincolor);
     text-align:center;
     position: relative; 
 }
 .medical-disclaimer img{
+    
     width: 50%;
     display: flex;
     align-items: center;
@@ -139,32 +160,16 @@ color: var(--ecrucolor);
     padding-bottom: 14px;
 }
 .btn-2{
-    margin: 0 28%;
+   width: 50%;
 }
-/* .disclaimer-img img{
-    width: 400px
-} */
-/* .medical-disclaimer{
-    top:50%; 
-    left: 50%; 
-    color: var(--ecrucolor);
-} */
-/* .medical-disclaimer h1{
-    padding: 1rem;
-    width: 100%;
-    margin: auto;
-    display: flex; */
-/* } */
-/* .btn2{
-    width: 20%;
-} */
+
 /* start of homepage section three */
 .book-appt-container{
+    margin-top: 4rem;
     display: flex;
+    align-items: center;
     justify-content: space-between;
     max-width: fit-content;
-    margin: 0 auto 1em;
-    align-items: center;
     width: 100%;
     background-color: var(--maincolor);
 }
@@ -178,7 +183,7 @@ color: var(--ecrucolor);
 }
 .book-section-img img{
     width: 500px;
-    height: 1000px;
+   height: 400px;
     object-fit: contain;
 }
 .book-section-content p{
@@ -186,9 +191,11 @@ color: var(--ecrucolor);
     color: var(--ecrucolor);
     margin: .5rem 0;
 }
-quiz-form {
-    max-width: 500px;
-    margin: 0 auto;
+#map{
+    width: 100%
+}
+#quiz-form {
+   
     padding: 20px;
 }
 .quiz-question {
@@ -197,35 +204,43 @@ quiz-form {
 .quiz-options label {
     display: block;
 }
+#location{
+   margin-left: 20px;
+}
 
-/* .btn3{
-
-    width: 45px;
-    } */
 
 /* end of homepage */
 /* start of herbal index page */
 .herb-page-container{
     background-color: var(--maincolor); 
     text-align: center; 
-    /* margin: 0.5em 0; */
+
 
 }
 .herb-products{
     justify-content: space-around;
-    /* margin: 2em 0; */
-    /* padding:0 1em; */
+  
 }
-
+.herb-products p{
+    width: 60%;
+    margin: 0 auto;
+}
 .herb-products img{
-    width: 90%;
+    width: 100%;
     margin: auto;
     height: 300px;
     display: block;
     object-fit: contain;
 
 }
-
+#create-btn{
+    text-decoration: none;
+    padding: 5px 10px;
+    font-size: 16px;
+    background-color: black;
+    color: white;
+    border-radius: 8px;
+}
 /* end of herbal index page */
 /* start of about page */
 .about-page-container{
@@ -234,9 +249,11 @@ quiz-form {
     height: 150px;
     font-size: larger;
     padding: 25px; 
+    text-align: center;
     align-content: center;
 }
 .resources-links{
+    text-align: center;
     box-sizing: border-box;
     border: 6px solid var(--apricotcolor);
     align-content: center;
@@ -245,8 +262,9 @@ quiz-form {
 }
 
 .resources-links img{
-    width: 500px;
-    display: flex;
+width: 500px;
+margin: 0 auto;
+
 
  
     
@@ -261,7 +279,32 @@ quiz-form {
     display: flex;
 }
 
-
+.Button-delete{
+  
+    padding: 5px 10px;
+    width: 20px;
+    background-color: var(--dutchwhitecolor);
+    height: 15px;
+   
+}
+.Button-edit {
+    text-decoration: none;
+    padding: 5px;
+    background-color: var(--dutchwhitecolor);
+   ;
+}
+.Button-delete a, .Button-edit a{
+ color: white;
+text-decoration: none;
+}
+/* admin */
+.admin-page-container{
+    text-align: center;
+}
+.admin-page-container table{
+    margin: 0 auto;
+    height: 40vh
+}
 /* footer */
 .footbar{
     background-color: var(--maincolor);
@@ -292,13 +335,69 @@ h3{
 
 
 /* navbar media queries */
-@media screen and (max-widith:900px){
+@media screen and (max-width:900px){
     html{
         font: size 16px;
     }
-    
+    .book-appt-container{
+        display: block;
+        text-align: center;
+    }
+    .medical-disclaimer{
+        display: block;
+        text-align: center;
+    }
+    .medical-disclaimer img{
+        margin: 0 auto;
+        width: 100%;
+    }
+    .page-container img{
+        width: 100%;
+    }
+    .book-section-content{
+        margin: 0 auto;
+        width: 80%
+    }
 }
-@media screen  and (max-widith:755px ){
+@media screen  and (max-width:755px ){
+    .topnav #myLinks {
+            display: none;
+            width: 30%;
+            text-align: right;
+            right: 0
+            
+        }
+    #myLinks li{
+        background-color: black;
+    }
+        /* Style navigation menu links */
+        .topnav a {
+            color: white;
+            padding: 14px 16px;
+            text-decoration: none;
+            font-size: 17px;
+            display: block;
+        }
+    
+        /* Style the hamburger menu */
+        .icon {
+            display: block;
+            position: absolute;
+            right: 5px;
+            top: 20px;
+        }
+    
+        /* Add a grey background color on mouse-over */
+        .topnav a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+    
+        /* Style the active link (or home/logo) */
+        .active {
+            background-color: #04AA6D;
+            color: white;
+        }
     html{
         font-size: 10px;
     
@@ -337,3 +436,5 @@ h3{
 }
 /* media quries end for navbar */
 /* media queries for page content */
+
+/* media queries */

@@ -1,21 +1,35 @@
- <!-- nav bar -->
- <div class="navbar">
-    <div class = logoImageContainer>
-        <img src="./images /logo 1.jpg">
+<!-- nav bar -->
+<div class="navbar">
+    <div class=logoImageContainer>
+        <img src="./images/logo 1.jpg" height="80px">
     </div>
-<nav>
-<ul>
-    <li><a href="./index.html">Home</a></li>
-    <li><a href="./herbals.html">Herbal Catalog</a></li>
-    <li><a href="./book.html">Book Now</a></li>
-    
-</ul>
-</nav>
+    <nav class="topnav">
+        <ul id="myLinks">
+            <li><a href="/">Home</a></li>
+            <li><a href="/about">About</a></li>
+            <li><a href="/herbals">Herbal Catalog</a></li>
+            <li><a href="/book">Book Now</a></li>
+            <li><a href="/Admin">Admin</a></li>
+        </ul>
+    </nav>
 
-<div class="icons">
-<i class="fa-solid fa-magnifying-glass"></i>
-<i class="fa-thin fa-bars"></i>
-<i class="fa-regular fa-user"></i>     
+    <div class="icons">
+        <!-- <div style="margin-right: 10px">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <i class="fa-regular fa-user"></i>
+        </div> -->
+        <div class="icon" onclick="myFunction()"><i class="fa fa-bars"></i></div>
+    </div>
 </div>
-</div>
+
+<script>
+    function myFunction() {
+        let x = document.getElementById("myLinks");
+        if (x.style.display === "block") {
+            x.style.display = "none";
+        } else {
+            x.style.display = "block";
+        }
+    }
+</script>
 <!-- end of nav bar -->

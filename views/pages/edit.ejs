@@ -1,0 +1,42 @@
+<%- include('../partials/head')-%>
+    <%- include('../partials/nav')-%>
+
+        <div>
+            <form action="/update/<%= data._id%>" method="post">
+                <div class="create-page-container">
+                    <h1>update Herb</h1>
+                    <div class="create-page-plant-name">
+                        <label>Plant Name</label>
+                        <input type="text" name="plantName" id="plantName" placeholder="plantName"
+                            value="<%= data.plantName %>">
+                    </div>
+                    <br>
+                    <div class="create-page-benefits">
+                        <label>Benefits</label>
+                        <input type="text" name="benefits" id="benefits" placeholder="benefits"
+                            value="<%= data.benefits %>">
+                    </div>
+                    <br>
+                    <div class="create-page-purchase">
+                        <label>Purchase Url:</label>
+                        <input type="text" name="purchase" id="genre" placeholder="purchase" value="<%= data.url %>">
+                    </div>
+                    <br>
+                    <div class="create-page-image">
+                        <label>image Url:</label>
+                        <input type="text" name="image" id="genre" placeholder="purchase" value="<%= data.image %>">
+                    </div>
+                    <br>
+                    <div class="create-page-submit">
+                        <p><input type="submit" value="update"></p>
+                    </div>
+
+
+
+            </form>
+        </div>
+
+
+
+
+        <%- include('../partials/footer')-%>

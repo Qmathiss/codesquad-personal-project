@@ -1,6 +1,41 @@
 <%- include('../partials/head')-%>
 <%- include('../partials/nav')-%>
+<div class="update-page-container">
+<h1>UPDATE Herb</h1>
+<form method="post" action="/:id">
+    <div class="update-page-plant-name">
+        <label for="plant name">Plant name</label>
+        <input type="text" name="plant name"  value = "<%=foundHerbal.plantName>"  placeholder="plant name value stored in database">
+    </div>
+    <br>
+    <div class="update-page-benefits">
+        <label for="benefits">Benefits:</label>
+        <textarea
+        rows = 5 cols= 30  placeholder="benefits"
+        id="benefits"
+        name="benefits"> value=<%=foundHerbal.benefits%></textarea>
+        </div> 
+        <br>
+        <br>
 
+
+
+
+
+
+
+
+</form>
+
+
+
+
+
+
+
+
+
+</div>
 
 
 
