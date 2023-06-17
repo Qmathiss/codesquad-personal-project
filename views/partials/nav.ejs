@@ -1,5 +1,45 @@
  <!-- nav bar -->
  <div class="navbar">
+    <div class=logoImageContainer>
+        <img src="./images/logo 1.jpg" height="80px">
+    </div>
+    <nav class="topnav">
+        <ul id="myLinks">
+            <li><a href="/">Home</a></li>
+            <li><a href="/about">About</a></li>
+            <li><a href="/herbals">Herbal Catalog</a></li>
+            <li><a href="/book">Book Now</a></li>
+            <li><a href="/Admin">Admin</a></li>
+        </ul>
+    </nav>
+    <div class="icons">
+        <div class="icon" onclick="myFunction()"><i class="fa fa-bars"></i></div>
+    </div>
+</div>
+
+<script>
+    function myFunction() {
+        let x = document.getElementById("myLinks");
+        if (x.style.display === "block") {
+            x.style.display = "none";
+        } else {
+            x.style.display = "block";
+        }
+    }
+</script>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ <!-- <div class="navbar">
     <div class = logoImageContainer>
         <img src="./images /logo 1.jpg">
     </div>
@@ -8,7 +48,7 @@
     <li><a href="/">Home</a></li>
     <li><a href="/about">About</a></li>
     <li><a href="/herbals">Herbal Catalog</a></li>
-    <li><a href="/book">Book Now</a></li>
+    <li><a href="/book">Find Resources</a></li>
     
 </ul>
 </nav>
@@ -18,5 +58,5 @@
 <i class="fa-thin fa-bars"></i>
 <i class="fa-regular fa-user"></i>     
 </div>
-</div>
+</div> -->
 <!-- end of nav bar -->

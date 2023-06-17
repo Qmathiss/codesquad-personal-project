@@ -3,16 +3,51 @@
 
 <ul id="alphabetLinks"></ul>
 
-
 <div class="herb-page-container">
+    <h1>Herbal Catalog</h1>
+    <br><br>
+    <div class=" herb-products">
+        <% if(data.length){ for(let i=0; i< data.length; i++) {%>
+            <img src="./images/<%= data[i].image%>">
+            <h2>
+                <%= data[i].plantName%>
+            </h2>
+            <h3>Benefits:</h3>
+            <p>
+                <%= data[i].benefits%>
+            </p>
+            <a href="<%= data[i].url%>" target="_blank">Purchase here</a>
+            <% } }else{ %>
+                <div>No plants</div>
+                <% } %>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <div class="herb-page-container">
     <h1>Herbal Catalog</h1>
     <button>Add new herb product</button>
     
-    <!-- insert for loop -->
-       <%#include('../partials/herbal-loop')-%>
+     insert for loop -->
+       <!-- <%#include('../partials/herbal-loop')-%> -->
        
        
-     
+<!--      
      <a href="https://animamundiherbals.com/products/whole-dried-blue-lotus-flowers">
         <img src="./images /herbalimage1.jpeg"alt="blue flower"></a>
         <h3>Plant Name: Egyptian Blue Lotus Flower</h3>
@@ -45,6 +80,6 @@
     <p> Bauhinia Forficata is known as the Brazilian orchid tree native to south america. This plant can help strengthen the pancreas. It is known as a vegetable insulin and helps balance the blood sugar levels.</p>
     <a href="https://herbs-america.com/shop/pata-de-vaca-cut-sift/">Purchase here</a>
 </div>
-</div>
+</div>  -->
 
 <%- include('../partials/footer')-%> 

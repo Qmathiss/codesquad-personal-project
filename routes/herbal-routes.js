@@ -1,14 +1,11 @@
 const express = require("express");
-const router = express.Router();
 const herbalController = require("../controllers/herbal-controller");
+const router = express.Router();
+router.get("/edit/(:id)", herbalController.edit);
+router.post("/update/(:id)", herbalController.update);
+router.get("/herbals", herbalController.read);
+router.post("/create", herbalController.create);
+router.get("/admin", herbalController.read_admin);
 
-router.route("/")
-    .get(herbalController.herbal)
-    .post(herbalController.create_form)
-    
-router.route("/create")
-.get(herbalController.create_form)   
+router.get("/delete/(:id)", herbalController.delete), (module.exports = router);
 
-  
-
-module.exports = router;

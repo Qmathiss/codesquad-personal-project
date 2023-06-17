@@ -4,8 +4,60 @@
 
 
 <%- include('../partials/nav')-%>
-
 <div class="admin-page-container">
+    <h1>ADMIN PAGE</h1><br>
+    <a href="/create" id="create-btn">Add a New Herb </a><br><br>
+    <table>
+        <thead>
+            <tr>
+                <th>Comic Title</th>
+                <th>Edit</th>
+                <th>Delete</th>
+            </tr>
+        </thead>
+        <tbody>
+            <% if(data.length){ for(let i=0; i< data.length; i++) {%>
+                <tr>
+                    <td>
+                        <%= data[i].plantName%>
+                    </td>
+                    <td class="Button-edit"><a href="edit/<%= data[i]._id%>">Edit</a>
+                    </td>
+                    <td class="Button-delete"><a href="delete/<%= data[i]._id%>">Delete</a>
+                    </td>
+                </tr>
+                <% } }else{ %>
+                    <div>No plants</div>
+                    <% } %>
+
+                        <td colspan="3"></td>
+                        </tr>
+        </tbody>
+    </table>
+
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- <div class="admin-page-container">
 <h1>ADMIN PAGE</h1>
 <button>Add New Herb </button>
 <table>
@@ -51,7 +103,7 @@
 
 
 
-
+ -->
 
 
 
