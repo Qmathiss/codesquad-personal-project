@@ -1,5 +1,9 @@
 <%- include('../partials/head')-%>
-    <%- include('../partials/nav')-%>
+<script async
+src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDIzwLj1ipvnwLaYpWDW-TqTY6Zu4ENwOA&callback=initMap">
+</script>   
+<%- include('../partials/nav')-%>
+   
         <!-- start of page container -->
         <div class="book-page-container">
             <div class="quiz-form">
@@ -30,14 +34,88 @@
                     <button type="submit">Submit</button>
 
                 </form>
+<script>
+const form = document.getElementById("quiz-form");
+
+form.addEventListener("submit", function(event) {
+  event.preventDefault();
+  // Code to handle form submission
+});
+form.addEventListener("submit", function(event) {
+  event.preventDefault();
+
+  // Get the input field values
+  const city = document.getElementById("q1").value;
+  const country = document.getElementById("q2").value;
+  console.log("City:", city);
+  console.log("Country:", country);
+
+  // Optionally, you can redirect the user or display a confirmation message
+  // after processing the form submission
+});
+
+</script>
+
 
             </div>
 
-            <div id="location-container">
+
+            <div id="map"></div>
                 <input id="location">
-                <img src="./images/location map.jpg" width="100%" id="map">
+               
+                
+                
+                <!-- <img src="./images/location map.jpg" width="100%" id="map"> -->
             </div>
 
+            <script>
+            // create map function
+            
+            // Initialize and add the map
+let map;
+
+async function initMap() {
+  // The location of sunsha
+  const position = { lat: 	42.361145, lng: -71.057083};
+  // Request needed libraries.
+  //@ts-ignore
+  const { Map } = await google.maps.importLibrary("maps");
+  const { AdvancedMarkerElement } = await google.maps.importLibrary("marker");
+
+  // The map, centered at Uluru
+  map = new Map(document.getElementById("map"), {
+    zoom: 4,
+    center: position,
+    mapId: "DEMO_MAP_ID",
+  });
+
+  // The marker, positioned at sunsha
+  const marker = new AdvancedMarkerElement({
+    map: map,
+    position: position,
+    title: "Uluru",
+  });
+}
+
+initMap();
+            
+            
+            
+            // let map;
+
+            // async function initMap() {
+            //   const { Map } = await google.maps.importLibrary("maps");
+            // //   new map
+            //   map = new Map(document.getElementById("map"), {
+            //     center: { lat: -42.3000 , lng: -71.8000 },
+            //     zoom: 8,
+            //   });
+            // }
+            
+            // initMap();
+            // // marker
+            
+</script>
         </div>
 
 
