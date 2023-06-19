@@ -1,4 +1,109 @@
-<%- include('../partials/head')-%>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script defer src="scripts.js"></script>
+    <script src="https://kit.fontawesome.com/3bb7188dce.js" crossorigin="anonymous"></script>
+    <title>Sunsha Holistic Collective</title>
+    <link rel="stylesheet" href="../styles/styles.css">
+</head>
+
+<body>
+    <div class="navbar">
+        <div class=logoImageContainer>
+            <img src="../images/logo 1.jpg" height="80px">
+        </div>
+        <nav class="topnav">
+            <ul id="myLinks">
+                <li><a href="/">Home</a></li>
+                <li><a href="/about">About</a></li>
+                <li><a href="/herbals">Herbal Catalog</a></li>
+                <li><a href="/book">Book Now</a></li>
+                <li><a href="/Admin">Admin</a></li>
+            </ul>
+        </nav>
+
+        <div class="icons">
+
+            <div class="icon" onclick="myFunction()"><i class="fa fa-bars"></i></div>
+        </div>
+    </div>
+    <div>
+        <form action="/update/<%= data._id%>" method="post">
+            <div class="create-page-container" style="height: 59vh">
+                <h1>update Herb</h1>
+                <div class="create-page-plant-name">
+                    <label>Plant Name</label>
+                    <input type="text" name="plantName" id="plantName" placeholder="plantName"
+                        value="<%= data.plantName %>">
+                </div>
+                <br>
+                <div class="create-page-benefits">
+                    <label>Benefits</label>
+                    <input type="text" name="benefits" id="benefits" placeholder="benefits"
+                        value="<%= data.benefits %>">
+                </div>
+                <br>
+                <div class="create-page-purchase">
+                    <label>Purchase Url:</label>
+                    <input type="text" name="purchase" id="genre" placeholder="purchase" value="<%= data.url %>">
+                </div>
+                <br>
+                <div class="create-page-image">
+                    <label>image Url:</label>
+                    <input type="text" name="image" id="genre" placeholder="purchase" value="<%= data.image %>">
+                </div>
+                <br>
+                <div class="create-page-submit">
+                    <p><input type="submit" value="update"></p>
+                </div>
+
+
+
+        </form>
+    </div>
+    <hr>
+    <div class="footbar">
+        <div class="footer-img">
+            <img src="../images/logo 1.jpg">
+        </div>
+        <div class="footer-text">
+            <h2>Keep in Touch</h2>
+            <h3> Text line: 857-309-0523</h3>
+            <h3>info@sunshaholisticcollective.org</h3>
+        </div>
+
+        <div class="footer-text-three">
+            <h2>Connect with Us</h2>
+            <a><i class="fa-brands fa-facebook"></i></a>
+            <a><i class="fa-brands fa-instagram"></i></a>
+            <a><i class="fa-brands fa-twitter"></i></a>
+            <!-- <div class="footer-product-of">
+                    <img src="./images /CodeSquad-logo-a copy.jpeg" alt="code squad logo in words red and black"></a>  -->
+            <!-- </div> -->
+
+
+        </div>
+        <div class="footer-text-two">
+            <h2>A Product of Codesquad</h2>
+            <img src="../images/CodeSquad-logo-a copy.jpeg" alt="code squad logo in words red and black">
+            <h3>Developer: Shaquana Mathis</h3>
+        </div>
+    </div>
+</body>
+
+</html>
+
+
+
+
+
+
+
+
+
     <%- include('../partials/nav')-%>
 
         <div>
@@ -39,4 +144,4 @@
 
 
 
-        <%- include('../partials/footer')-%>
+        <%- include('../partials/footer')-%> -->

@@ -11,15 +11,12 @@ module.exports = {
       image: request.body.imageUrl,
       url: request.body.purchase,
     });
-    plant.save(plant).then((err, plantpost) => {
-      if (err) {
-        response.status(500).send(err);
-        //  console.log(error);
-      } else {
-        response.status(200).send(plantpost);
-        response.redirect("/herbals");
-        // console.log(plantpost);
-      }
+    plant.save(plant).then(() => {
+
+       
+        response.redirect('./herbals')
+       
+      
     });
     // res.render("create", { Error: "block" });
   },

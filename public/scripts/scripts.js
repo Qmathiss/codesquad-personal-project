@@ -1,6 +1,14 @@
 const location = alert ("Please be aware we can only book clients in Georgia California states only!");
 console.log(location);
 
+
+
+
+
+
+
+
+
 // document.getElementById("quiz-form").addEventListener("submit", function(event) {
 //   event.preventDefault();
 //   let  q1Answer = document.querySelector('input[name="q1"]:checked');

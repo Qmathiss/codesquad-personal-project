@@ -1,26 +1,38 @@
 <%- include('../partials/head')-%>
     <%- include('../partials/nav')-%>
+    
+    <div class="herb-page-container">
+    <div class=" herb-banner">
+    <img src="/images/herbal-top-image.jpg">
 
-        <ul id="alphabetLinks"></ul>
+    <h1 class="herb-banner-overlay">Herbs and Spices </h1>
+    </div>
 
 
-        <div class="herb-page-container">
-            <h1>Herbal Catalog</h1>
+<br><br>
+
             <br><br>
             <div class=" herb-products">
                 <% if(data.length){ for(let i=0; i< data.length; i++) {%>
-                    <img src="./images/<%= data[i].image%>">
-                    <h2>
+                   <div class="plant-image">
+                    <img src="<%= data[i].image%>"></div>
+                   <div class="plant-name"><h2>
                         <%= data[i].plantName%>
-                    </h2>
+                    </h2></div> 
+                    <div class="plant-benefits">
                     <h3>Benefits:</h3>
                     <p>
                         <%= data[i].benefits%>
                     </p>
-                    <a href="<%= data[i].url%>" target="_blank">Purchase here</a>
+                </div>
+                    <button>
+                    <a href="<%= data[i].url%>" target="_blank">Purchase here</a> </button>
                     <% } }else{ %>
                         <div>No plants</div>
                         <% } %>
+                        
+                        
+                        <br>
             </div>
 
 

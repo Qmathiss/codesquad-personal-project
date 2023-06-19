@@ -2,7 +2,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: Montserrat sans-serif;
+    font-family: 'Montserrat', sans-serif;
 }
 :root{
     --maincolor: #F1EBEB;
@@ -54,7 +54,6 @@ width: 35%;
 
 }
 
-
 .icons{
     color: black;
     display: flex;
@@ -78,8 +77,10 @@ width: 35%;
 .content-section{
 width: 100%;
 
-text-align: center;
-padding: 0.3em;
+
+
+/* text-align: center;
+padding: 0.3em; */
 }
 
 .content-section h1{
@@ -90,21 +91,18 @@ color: var(--ecrucolor);
 
 }
 
-.second-heading{
-    font-size: 2.5rem; 
+.content-section h2 {
+    font-size: 1.5rem; 
     width: 60%;
     margin: 0 auto;
 
-}
-.content-section p{
-    font: .5rem;
-    color: var(--ecrucolor);
-    margin: .5rem 0;
-    width: 60%;
-        margin: 0 auto;
-}
+    
+
+ } 
+
 .content-section img{
-    width: 60%
+    width: 50%;
+
 }
 .btn{
     width: 25%;
@@ -129,11 +127,12 @@ color: var(--ecrucolor);
     color: var(--whitecolor);
 
 }
-.home-page-img img{ 
+/* .home-page-img img{ 
     width: 500px;
     height: 1000px;
     object-fit: contain;  
-}
+} */
+
 /* end of page container 1 */
 
 /* start of homepage container section 2 */
@@ -155,13 +154,35 @@ color: var(--ecrucolor);
     background-color: var(--maincolor);
     
 }
-.medical-disclaimer-content{
-    line-height: 26px;
-    padding-bottom: 14px;
+.medical-disclaimer-content h1{
+    background-color: transparent;
+    color: black;
+    top: 40%;
+    font-weight:bolder;
+    font-size: 40px;
+
 }
+.medical-disclaimer-content{
+width: 50%;
+position: absolute;
+top: 77%;
+left: 49%;
+transform: translate(-98%,-98%);
+color: black;
+font-size: 14px;
+font-style: italic;
+
+
+}
+.medical-disclaimer-content h3{
+    background-color: white;
+}
+
+
 .btn-2{
    width: 50%;
 }
+
 
 /* start of homepage section three */
 .book-appt-container{
@@ -213,24 +234,75 @@ color: var(--ecrucolor);
 /* start of herbal index page */
 .herb-page-container{
     background-color: var(--maincolor); 
-    text-align: center; 
-
-
+    text-align: center;
+}  
+.herb-banner{
+    position: relative;
+    display: inline-block;
 }
+.herb-banner-overlay{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-70%, -70%);
+    
+    color: whitesmoke;
+    font-size: 80px;
+    font-weight: bold;
+}
+
+
 .herb-products{
-    justify-content: space-around;
+    width: 100%;
+    min-width: 150px;
+   padding: 100px 30px;
+   border: 50px solid whitesmoke; 
+   border-radius: 100px;
+  
+  
+  
+  
   
 }
+.herb-products button{
+    cursor: pointer;
+    background-color: var(--apricotcolor);
+    text-decoration: none;
+    font-style: oblique;
+  /* position: relative; */
+
+    
+}
+.herb-products a{
+    text-decoration: none;
+    color: black;
+}
+.herb-products:hover{
+box-shadow: gray;
+}
 .herb-products p{
-    width: 60%;
+   border: 5px solid whitesmoke;  
+   text-align:center;
+   
+    /* text-align: start; */
+    padding: 10px 0;
+    /* width: 60%; */
     margin: 0 auto;
+    font-size: 20px;
+    font-style: italic;
 }
 .herb-products img{
-    width: 100%;
+   
+    width: 40%;
+    border-radius: 30px;
     margin: auto;
     height: 300px;
-    display: block;
-    object-fit: contain;
+    
+ 
+ 
+    /* display: block;
+    margin-top: 25px;
+    object-fit: contain; */
 
 }
 #create-btn{
@@ -368,7 +440,7 @@ h3{
             
         }
     #myLinks li{
-        background-color: black;
+        background-color:black;
     }
         /* Style navigation menu links */
         .topnav a {
