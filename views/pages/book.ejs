@@ -1,123 +1,18 @@
 <%- include('../partials/head')-%>
-<script async
-src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDIzwLj1ipvnwLaYpWDW-TqTY6Zu4ENwOA&callback=initMap">
-</script>   
+
 <%- include('../partials/nav')-%>
    
         <!-- start of page container -->
         <div class="book-page-container">
-            <div class="quiz-form">
-                <h1>Healing Journey Questionaire:</h1>
-                <p>In order to best assist on your wellness path, please answer the following questions, and the best
-                    options that suit your needs will populate</p>
-                <form id="quiz-form">
-                    <div class="quiz-question">
-                        <p> 1. What do you want to explore on your healing path?</p>
-                        <div class="quiz-selections">
-                            <label><input type="radio" name="q1" id="a"> A. Find Your Purpose </label>
-                            <label><input type="radio" name="q1" id="b"> B.Create healthy eating habits </label>
-                            <label><input type="radio" name="q1" id="c"> C. Indulge in regular self care.</label>
-                        </div>
-                    </div>
-                    <div class="quiz-question">
-                        <p>2.What is one important resource you want at the start of your healing journey?</p>
-                        <div class="quiz-selections">
-                            <label><input type="radio" name="q2" id="a"> A. Holistic therapy (healing innerchild truama,
-                                reiki, meditation) </label>
-                            <label><input type="radio" name="q2" id="b"> B.Meeting with herbalist,holisitc
-                                practioners,or nutritionist </label>
-                            <label><input type="radio" name="q2" id="c"> C.Create or find a group, tribe or community of
-                                your peers on the same healing journey.</label>
-                        </div>
+          <h1 class="book-page-title">Find Wellness Centers in Boston</h1>
+        
+<div class="map">
 
-                    </div>
-                    <button type="submit">Submit</button>
+  <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1WTzYSPBymzolwSPdRRTc4c0DMLEPVHQ&ehbc=2E312F"  width="600" 
+  height="500"></iframe></div>
+</div>
 
-                </form>
-<script>
-const form = document.getElementById("quiz-form");
-
-form.addEventListener("submit", function(event) {
-  event.preventDefault();
-  // Code to handle form submission
-});
-form.addEventListener("submit", function(event) {
-  event.preventDefault();
-
-  // Get the input field values
-  const city = document.getElementById("q1").value;
-  const country = document.getElementById("q2").value;
-  console.log("City:", city);
-  console.log("Country:", country);
-
-  // Optionally, you can redirect the user or display a confirmation message
-  // after processing the form submission
-});
-
-</script>
-
-
-            </div>
-
-
-            <div id="map"></div>
-                <input id="location">
-               
-                
-                
-                <!-- <img src="./images/location map.jpg" width="100%" id="map"> -->
-            </div>
-
-            <script>
-            // create map function
-            
-            // Initialize and add the map
-let map;
-
-async function initMap() {
-  // The location of sunsha
-  const position = { lat: 	42.361145, lng: -71.057083};
-  // Request needed libraries.
-  //@ts-ignore
-  const { Map } = await google.maps.importLibrary("maps");
-  const { AdvancedMarkerElement } = await google.maps.importLibrary("marker");
-
-  // The map, centered at Uluru
-  map = new Map(document.getElementById("map"), {
-    zoom: 4,
-    center: position,
-    mapId: "DEMO_MAP_ID",
-  });
-
-  // The marker, positioned at sunsha
-  const marker = new AdvancedMarkerElement({
-    map: map,
-    position: position,
-    title: "Uluru",
-  });
-}
-
-initMap();
-            
-            
-            
-            // let map;
-
-            // async function initMap() {
-            //   const { Map } = await google.maps.importLibrary("maps");
-            // //   new map
-            //   map = new Map(document.getElementById("map"), {
-            //     center: { lat: -42.3000 , lng: -71.8000 },
-            //     zoom: 8,
-            //   });
-            // }
-            
-            // initMap();
-            // // marker
-            
-</script>
-        </div>
-
+ 
 
 
 

@@ -1,4 +1,5 @@
 const express = require("express");
+const passport = require('passport');
 const morgan = require("morgan");
 const path = require("path");
 const methodOverride = require("method-override");

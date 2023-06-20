@@ -4,6 +4,10 @@ const data = require("../data/data");
 module.exports = {
   admin_console: (request, response) => {
     response.render("pages/admin");
+  //   if (request.isAuthenticated()) {
+  //     response.render('pages/admin', {
+  //         data: data
+  //     }); 
   },
   create_herbal: (request, response) => {
     response.render("pages/create");

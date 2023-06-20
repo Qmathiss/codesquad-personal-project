@@ -1,4 +1,5 @@
 const mongoose = require("mongoose"); // additional line to import the mongoose
+
 const Schema = mongoose.Schema;
 const PlantsSchema = new Schema({
   plantName: String,

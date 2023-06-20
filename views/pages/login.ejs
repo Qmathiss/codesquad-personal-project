@@ -1,0 +1,36 @@
+<%- include('../partials/head')-%>
+<%- include('../partials/nav')-%>
+<div class="page-container"> 
+    <h1 class="form-heading">Login</h1>
+   <form action="/login" method="POST">
+<div>
+    <label for="username">Username:</label>
+    <input type="text" name="username" id="username" required />
+</div>
+
+<div>
+    <label for="password">Password: </label>
+    <input type="password" name="password" id="password"  required />
+</div>
+<div>
+<input type="submit" value="Submit"/>
+</div>
+<button>
+<a href="/auth/google" role="button"> Login or Register with google</a>
+</button>
+
+<button>
+<p> Don't Have An Account? <a href="/register">Create one here!</a></p>
+</button>
+
+
+   </form>
+</div>
+
+
+
+
+
+
+
+<%- include('../partials/footer')-%>
