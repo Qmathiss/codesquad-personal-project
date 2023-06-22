@@ -6,4 +6,5 @@ const router = express.Router();
 router.use("/", siteRouter);
 router.use("/herbal", herbalRouter);
 router.use("/admin-console", adminRouter);
+// router.use("/admin-console/login",adminRouter );
 module.exports = router;

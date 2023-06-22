@@ -26,7 +26,7 @@ userSchema.plugin(findOrCreate);
 
 // // variable User contains collection name and Schema
 
-const User = mongoose.model ("User", userSchema);
+const User = mongoose.model("User", userSchema);
 
 // // passport.use to add the createStrategy method
 passport.use(User.createStrategy());

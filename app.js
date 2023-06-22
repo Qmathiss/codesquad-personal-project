@@ -49,6 +49,10 @@ app.get("/admin", (req, res) => {
   res.render("pages/admin");
 });
 
+app.get("/login", (req,res) =>{
+  res.render("pages/login");
+});
+
 app.listen(PORT, () => {
   console.log(`Server is listening on ${PORT}`);
 });
